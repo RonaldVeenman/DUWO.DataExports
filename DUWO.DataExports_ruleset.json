@@ -1,0 +1,17 @@
+{
+    "name": "DUWO Data Exports Ruleset",
+    "description": "DUWO Base rules",
+    "generalAction": "Warning",
+    "rules": [        
+        {
+            "id": "AA0215",
+            "action": "Hidden",
+            "justification": "Follow the style guide about the best practices for naming."
+        },   
+        {
+            "id": "AA0210",
+            "action": "None",
+            "justification": "Missing key warning."
+        }                                
+    ]
+}
