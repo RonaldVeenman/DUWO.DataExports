@@ -17,7 +17,7 @@ table 60300 "DUWO Data Export Table Setup"
                 AllObjWithCaption: Record AllObjWithCaption;
             begin
                 if AllObjWithCaption.Get(AllObjWithCaption."Object Type"::Table, "Table No.") then
-                    "Table Name" := CopyStr(AllObjWithCaption."Object Name".Replace(' ', '_'), 1, MaxStrLen("Table Name"))
+                    "Table Name" := CopyStr(AllObjWithCaption."Object Name".Replace(' ', '_').Replace('/', '_'), 1, MaxStrLen("Table Name"))
                 else
                     "Table Name" := '';
             end;
